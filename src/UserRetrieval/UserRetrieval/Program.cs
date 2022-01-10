@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using UserRetrieval.Buisness;
 using UserRetrieval.Controllers;
 /// ETML
 /// Author      : Santiago Sugrañes
@@ -18,6 +19,10 @@ namespace UserRetrieval
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // LOGGER : Application Log path
+            Logger.AppLogPath = "./appLog.txt";
+            Logger.UserLogPath = "./users.txt";
 
             // MVC : Controller instance
             Controller ctrler = new Controller();

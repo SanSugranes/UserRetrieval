@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Buisness\Logger.cs" />
     <Compile Include="Controllers\Controller.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Program.cs" />

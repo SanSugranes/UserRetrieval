@@ -5,7 +5,7 @@ UserRetrieval is a small app runnun at windows startup that logs the users Name 
 - [x] Retreive Name and Surname
 - [x] Display Name and Surname
 - [ ] Auto launch at windows startup
-- [ ] Add Name and Surname on txt log
+- [x] Add Name and Surname on txt log
 #### Optional
 - [ ] Fullscreen app
 
