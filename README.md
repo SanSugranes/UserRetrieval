@@ -16,5 +16,5 @@ UserRetrieval is a small app runnun at windows startup that logs the users Name 
 ## Setup and guide
 First, clone this repo.
 ### Change log path
-In the [Program.cs](./src/UserRetrieval/UserRetrieval/Program.cs) file, you can edit the AppLogPath and UserLogPath. They are eather relative from where the executable is (./...), or absolute (C:/...).
+In the [Program.cs](./src/UserRetrieval/UserRetrieval/Program.cs) file, you can edit the AppLogPath and UserLogPath at line **24** and **25**. They are eather relative from where the executable is (./...), or absolute (C:/...).
 Compile the program and run it. Its also accessible in the [Debug](./src/UserRetrieval/UserRetrieval/bin/Debug) or [Release](./src/UserRetrieval/UserRetrieval/bin/Release) folder, depending on the compiling method you used. 
