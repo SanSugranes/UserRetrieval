@@ -2,6 +2,7 @@
 /// Author      : Santiago Sugrañes
 /// Date        : 10.01.2022
 /// Description : Application controller, gets the data from model and sets it to the view
+using System;
 using System.Windows.Forms;
 using UserRetrieval.Buisness;
 using UserRetrieval.Models;
@@ -29,22 +30,33 @@ namespace UserRetrieval.Controllers
             SetViewText();
         }
 
+        /// <summary>
+        /// Runs the main view
+        /// </summary>
         internal void RunMainView()
         {
             Application.Run(this._view);
         }
 
+        /// <summary>
+        /// Thets the View text to the user Name and Surname
+        /// </summary>
         private void SetViewText()
         {
             string userInfos = this._model.GetUserInfos();
-            this._view.SetText(userInfos);
-            Logger.Log(Logger.LogLevel.INFO, $"{userInfos} connected successfully");
-            AddToFile(userInfos);
-        } 
 
-        private void AddToFile(string userInfos)
-        {
-            Logger.AppendToUsers(userInfos);
-        }
+            // If user infos could not be retrieved, log it and exit the program
+            if (userInfos == null || userInfos == "")
+            {
+                Logger.Log(Logger.LogLevel.WARNING, "User infos could not be retrieved");
+                Environment.Exit(0);
+            }
+            else
+            {
+                this._view.SetText(userInfos);
+                Logger.Log(Logger.LogLevel.INFO, $"{userInfos} connected successfully");
+                Logger.AppendToUsers(userInfos);
+            }
+        } 
     }
 }

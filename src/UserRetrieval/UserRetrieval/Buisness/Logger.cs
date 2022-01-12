@@ -10,6 +10,9 @@ namespace UserRetrieval.Buisness
 {
     static class Logger
     {
+        /// <summary>
+        /// Log levels
+        /// </summary>
         internal enum LogLevel
         {
             INFO,
@@ -18,11 +21,22 @@ namespace UserRetrieval.Buisness
             DEBUG
         }
 
+        /// <summary>
+        /// Path to the app log
+        /// </summary>
         private static string appLogPath = "";
+        /// <summary>
+        /// Path to the file containing all users that have connected
+        /// </summary>
         private static string userLogPath = "";
         internal static string AppLogPath { set { appLogPath = value; } }
         internal static string UserLogPath { set { userLogPath = value; } }
 
+        /// <summary>
+        /// Logs into the app log
+        /// </summary>
+        /// <param name="logLevel">Level of importance</param>
+        /// <param name="message">Message to log</param>
         internal static void Log(LogLevel logLevel, string message)
         {
             DateTime now = DateTime.Now;
@@ -58,6 +72,10 @@ namespace UserRetrieval.Buisness
             }
         }
 
+        /// <summary>
+        /// Appends a user to the user file log if he isn't already in it
+        /// </summary>
+        /// <param name="message">User Name and Surname to log</param>
         internal static void AppendToUsers(string message)
         {
             FileStream userLog = new FileStream(userLogPath, FileMode.OpenOrCreate, FileAccess.ReadWrite);

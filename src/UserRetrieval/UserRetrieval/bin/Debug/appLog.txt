@@ -1,0 +1,11 @@
+[INFO][12.01.2022 08:51:59]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 08:53:25]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 08:53:25]: User Santiago Sugrañesoria already in file.
+[INFO][12.01.2022 08:54:09]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 08:54:09]: User Santiago Sugrañesoria already in file.
+[INFO][12.01.2022 08:55:18]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 08:55:18]: User Santiago Sugrañesoria already in file.
+[INFO][12.01.2022 09:30:00]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 09:30:00]: User Santiago Sugrañesoria already in file.
+[INFO][12.01.2022 09:30:37]: Santiago Sugrañesoria connected successfully
+[INFO][12.01.2022 09:30:37]: User Santiago Sugrañesoria already in file.

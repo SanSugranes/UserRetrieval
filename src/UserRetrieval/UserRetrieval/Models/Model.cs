@@ -17,6 +17,10 @@ namespace UserRetrieval.Models
 
         }
 
+        /// <summary>
+        /// Gets the user Name and Surname
+        /// </summary>
+        /// <returns>String containing Name and Surname</returns>
         internal string GetUserInfos()
         {
             return UserPrincipal.Current.DisplayName;

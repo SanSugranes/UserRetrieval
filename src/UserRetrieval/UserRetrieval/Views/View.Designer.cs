@@ -34,6 +34,8 @@
             // lblUserName
             // 
             this.lblUserName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblUserName.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.lblUserName.Location = new System.Drawing.Point(0, 0);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(800, 450);
@@ -44,10 +46,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblUserName);
             this.Name = "View";
-            this.Text = "View";
+            this.ShowIcon = false;
+            this.Text = "UserRetrieval";
             this.ResumeLayout(false);
 
         }

@@ -26,6 +26,10 @@ namespace UserRetrieval.Views
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Sets the text to the text label
+        /// </summary>
+        /// <param name="userInfos"></param>
         internal void SetText(string userInfos)
         {
             this.lblUserName.Text = userInfos;
